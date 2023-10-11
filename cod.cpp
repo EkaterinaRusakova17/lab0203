@@ -24,6 +24,13 @@ int main() {
   cout << "H= " << H << " V= " << V << endl;
   H += 2;
   }
+  
+  do {
+  V = v * ( (log (H / h) * log (H / h) ) / (log (10 / h) * log (10 / h) ) );
+  cout << "H= " << H << " V= " << V << endl;
+  H += 2; } 
+  while ( (H > 2) && (H < 90) );
+  
   system ("pause");
   return 0;
 }
